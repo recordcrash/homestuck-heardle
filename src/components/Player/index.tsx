@@ -30,6 +30,15 @@ export function Player({ id, currentTry }: Props) {
 
   const [isReady, setIsReady] = React.useState<boolean>(false);
 
+  const spoilerProtect = () => {
+    setMetadata();
+    const spoilerProtection = document.getElementById('spoilerProtection') as HTMLAudioElement | null;
+    if (spoilerProtection !== null && spoilerProtection.paused == true) {
+      spoilerProtection.loop = true;
+      spoilerProtection.play();
+    }
+  }
+
   React.useEffect(() => {
     setInterval(() => {
       playerRef.current?.internalPlayer
@@ -50,8 +59,21 @@ export function Player({ id, currentTry }: Props) {
     }
   }, [play, currentTime]);
 
+  const setMetadata = () => {
+    navigator.mediaSession.metadata = new MediaMetadata({
+      title: 'Spoiler Protection (Remastered)',
+      artist: 'Skaianet Records',
+      album: 'Homestuck Heardle',
+      artwork: [
+        { src: process.env.PUBLIC_URL + 'logo192.png', sizes: '192x192', type: 'image/png' },
+        { src: process.env.PUBLIC_URL + 'logo512.png', sizes: '512x512', type: 'image/png' },
+      ]
+    });
+  }
+
   // don't call play video each time currentTime changes
   const startPlayback = React.useCallback(() => {
+    spoilerProtect();
     playerRef.current?.internalPlayer.playVideo();
     setPlay(true);
     event({
@@ -66,6 +88,9 @@ export function Player({ id, currentTry }: Props) {
 
   return (
     <>
+      <audio preload="auto" autoPlay={true} id="spoilerProtection">
+        <source src={process.env.PUBLIC_URL + 'spoilerprotection.mp3'} type="audio/mp3"></source>
+      </audio>
       <YouTube opts={opts} videoId={id} onReady={setReady} ref={playerRef} />
       {isReady ? (
         <>

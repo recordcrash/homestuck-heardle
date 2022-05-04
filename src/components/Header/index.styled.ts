@@ -38,14 +38,13 @@ export const Content = styled.div`
   }
 `;
 
-export const Logo = styled.h1`
-  color: ${({ theme }) => theme.text};
-  font-family: "Homestuck", serif;
-  text-transform: uppercase;
-  width: max-content;
-  font-smooth: never;
-  text-rendering: optimizeLegibility;
-
+export const Logo = styled.img.attrs({
+  src: `${process.env.PUBLIC_URL + 'homestuck-heardle.png'}`,
+  title: 'Homestuck Heardle',
+  alt: 'Homestuck Heardle'
+})`
+  width: 100%;
+  margin: 5%;
   -webkit-touch-callout: none;
   user-select: none;
 `;
