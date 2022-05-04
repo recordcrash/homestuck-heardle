@@ -3,7 +3,7 @@ export const theme = {
   border100: "#5C5C5C",
 
   text: "#FFFFFF",
-  background100: "#002E3D",
+  background100: "#043d00",
 
   green: "#4DBB60",
   red: "#FF0000",

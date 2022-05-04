@@ -48,11 +48,7 @@ export const Spacer = styled.div`
 `;
 
 export const Section = styled.div`
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  justify-content: space-between;
-
+  width: 100%;
   a {
     color: ${({ theme }) => theme.text};
   }
@@ -65,6 +61,5 @@ export const Contact = styled.p`
   margin-top: 5%;
 
   font-size: 0.9rem;
-  font-weight: bold;
   opacity: 0.5;
 `;

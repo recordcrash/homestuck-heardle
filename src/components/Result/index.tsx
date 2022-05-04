@@ -23,7 +23,7 @@ export function Result({
   currentTry,
 }: Props) {
   const hoursToNextDay = Math.floor(
-    (new Date(new Date().setHours(24, 0, 0, 0)).getTime() -
+    (new Date(new Date().setUTCHours(24, 0, 0, 0)).getTime() -
       new Date().getTime()) /
       1000 /
       60 /
@@ -41,7 +41,7 @@ export function Result({
       <>
         <Styled.ResultTitle>{textForTry[currentTry - 1]}</Styled.ResultTitle>
         <Styled.SongTitle>
-          Todays song is {todaysSolution.artist} -{" "}
+          Today&apos;s song is {todaysSolution.artist} -{" "}
           {todaysSolution.name}
         </Styled.SongTitle>
         <Styled.Tries>
@@ -61,7 +61,7 @@ export function Result({
       <>
         <Styled.ResultTitle>Unfortunately, thats wrong</Styled.ResultTitle>
         <Styled.SongTitle>
-          Todays song is {todaysSolution.artist} -{" "}
+          Today&apos;s song is {todaysSolution.artist} -{" "}
           {todaysSolution.name}
         </Styled.SongTitle>
         <YouTube id={todaysSolution.youtubeId} />

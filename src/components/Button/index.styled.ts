@@ -9,8 +9,11 @@ export const Button = styled.button<{ variant?: keyof typeof theme }>`
   border: none;
 
   color: ${({ theme }) => theme.text};
+  font-family: "Homestuck", serif;
+  text-transform: uppercase;
+  font-smooth: never;
+  text-rendering: optimizeLegibility;
   font-size: 1rem;
-  font-weight: 800;
 
   width: max-content;
   padding: 12.5px 20px;

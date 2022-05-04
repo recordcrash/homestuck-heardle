@@ -2,7 +2,7 @@ import { GuessType } from "../types/guess";
 
 export function scoreToEmoji(guesses: GuessType[]): string {
   const msInDay = 86400000;
-  const startDate = new Date('4/15/2022');
+  const startDate = new Date(Date.UTC(2022, 4, 2, 0, 0, 0));
   const todaysDate = new Date();
   const index = Math.floor((todaysDate.getTime() - startDate.getTime() )/msInDay) + 1 
   const emojis = {
@@ -12,7 +12,8 @@ export function scoreToEmoji(guesses: GuessType[]): string {
     empty: "⬛️",
   };
   // const todaysDate = new Date();
-  const prefix = `HeardleTemplate - #${index} 🎧`;
+  const prefix = `I solved today's Homestuck Heardle - #${index} 🎧`;
+  const suffix = `Played at https://heardle.homestuck.net`
 
   let scoreEmoji = "";
 
@@ -28,5 +29,5 @@ export function scoreToEmoji(guesses: GuessType[]): string {
     }
   });
 
-  return `${prefix} ${scoreEmoji}`;
+  return `${prefix} ${scoreEmoji} ${suffix}`;
 }

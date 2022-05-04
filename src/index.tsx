@@ -1,6 +1,6 @@
 import { initialize } from "react-ga";
 
-const TRACKING_ID = "INSERT-YOUR-ID-HERE";
+const TRACKING_ID = "G-LEM4S5W3T6";
 initialize(TRACKING_ID);
 
 import React from "react";
