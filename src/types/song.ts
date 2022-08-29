@@ -1,5 +1,7 @@
 export interface Song {
-  artist: string;
   name: string;
+  artist: string[];
+  albumName: string;
+  tags: string[];
   youtubeId: string;
 }

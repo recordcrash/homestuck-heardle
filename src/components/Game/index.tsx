@@ -2,11 +2,11 @@ import React from "react";
 
 import { GuessType } from "../../types/guess";
 import { Song } from "../../types/song";
-import { playTimes } from "../../constants";
 
 import { Button, Guess, Player, Search, Result } from "../";
 
 import * as Styled from "./index.styled";
+import { MaxWidthButton } from "../Button/index.styled";
 
 interface Props {
   guesses: GuessType[];
@@ -14,7 +14,6 @@ interface Props {
   currentTry: number;
   didGuess: boolean;
   setSelectedSong: React.Dispatch<React.SetStateAction<Song | undefined>>;
-  skip: () => void;
   guess: () => void;
 }
 
@@ -24,7 +23,6 @@ export function Game({
   currentTry,
   didGuess,
   setSelectedSong,
-  skip,
   guess,
 }: Props) {
   if (didGuess || currentTry === 6) {
@@ -48,17 +46,12 @@ export function Game({
         />
       ))}
       <Player id={todaysSolution.youtubeId} currentTry={currentTry} />
-      <Search currentTry={currentTry} setSelectedSong={setSelectedSong} />
+      <Search currentTry={currentTry} setSelectedSong={setSelectedSong}/>
 
       <Styled.Buttons>
-        <Button onClick={skip}>
-          {currentTry === 5
-            ? "Give Up"
-            : `Skip +${playTimes[currentTry] / 1000}s`}
-        </Button>
-        <Button variant="green" onClick={guess}>
+        <MaxWidthButton variant="green" onClick={guess}>
           Submit
-        </Button>
+        </MaxWidthButton>
       </Styled.Buttons>
     </>
   );

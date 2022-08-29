@@ -5,12 +5,13 @@ export const Container = styled.div<{
   isCorrect: boolean | undefined;
 }>`
   width: 100%;
-  height: 45px;
+  height: 60px;
 
   margin: 5px auto;
 
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
   border-color: ${({ theme, active, isCorrect }) => {
     if (active) {
@@ -28,12 +29,36 @@ export const Container = styled.div<{
   color: ${({ theme }) => theme.text};
 `;
 
-export const Text = styled.p`
+export const MultiContainer = styled.div<{
+  color: string | undefined;
+}>`
+  width: 100%;
+  height: 80%;
+
+  margin: 2px auto;
+  display: flex;
+  flex-direction: column;
+  scrollbar-color: #999;
+  overflow-x: hidden;
+  color: ${({color}) => color};
+`;
+
+export const ColumnText = styled.span`
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  margin: auto;
+  padding-bottom: 3px;
+  line-height: 1.0;
+`;
+
+export const Text = styled.p<{
+  isCorrect: boolean | undefined;
+}>`
   width: 100%;
   height: max-content;
-
-  padding: 0px 10px;
+  text-align: center;
 
   font-size: 1rem;
-  color: ${({ theme }) => theme.text};
+  color: ${({ theme, isCorrect} , ) => isCorrect ? theme.text : 'red'};
 `;

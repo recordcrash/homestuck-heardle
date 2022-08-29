@@ -1817,7 +1817,7 @@
   {
     "artist": "Buzinkai",
     "name": "Doctor (Original Loop)",
-    "youtubeId": "watch?v=o0Um9OiP8dU"
+    "youtubeId": "o0Um9OiP8dU"
   },
   {
     "artist": "Haunter",

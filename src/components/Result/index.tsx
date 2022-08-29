@@ -32,10 +32,10 @@ export function Result({
 
   const textForTry = ["Wow!", "Super!", "Congrats!", "Nice!"];
 
+  const copyResult = React.useCallback(() => {
+    navigator.clipboard.writeText(scoreToEmoji(guesses));
+  }, [guesses]);
   if (didGuess) {
-    const copyResult = React.useCallback(() => {
-      navigator.clipboard.writeText(scoreToEmoji(guesses));
-    }, [guesses]);
 
     return (
       <>
@@ -59,14 +59,17 @@ export function Result({
   } else {
     return (
       <>
-        <Styled.ResultTitle>Unfortunately, thats wrong</Styled.ResultTitle>
+        <Styled.ResultTitle>Unfortunately, that&apos;s wrong</Styled.ResultTitle>
         <Styled.SongTitle>
           Today&apos;s song is {todaysSolution.artist} -{" "}
           {todaysSolution.name}
         </Styled.SongTitle>
         <YouTube id={todaysSolution.youtubeId} />
+        <Button onClick={copyResult} variant="green">
+          Copy results
+        </Button>
         <Styled.TimeToNext>
-          Try again in {hoursToNextDay}{" "} hours
+          Try again in {hoursToNextDay}{" "} hours, or ask your Time player
         </Styled.TimeToNext>
       </>
     );

@@ -7,14 +7,17 @@ export function searchSong(searchTerm: string): Song[] {
   return songs
     .filter((song: Song) => {
       const songName = song.name.toLowerCase();
-      const songArtist = song.artist.toLowerCase();
+      // const songArtist = song.artist.toLowerCase();
 
-      if (songArtist.includes(searchTerm) || songName.includes(searchTerm)) {
+      // if (songArtist.includes(searchTerm) || songName.includes(searchTerm)) {
+      //   return song;
+      // }
+      if (songName.includes(searchTerm)) {
         return song;
       }
     })
     .sort((a, b) =>
-      a.artist.toLowerCase().localeCompare(b.artist.toLocaleLowerCase())
+      a.artist[0].toLowerCase().localeCompare(b.artist[0].toLocaleLowerCase())
     )
     .slice(0, 5);
 }

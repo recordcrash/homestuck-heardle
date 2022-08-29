@@ -15,12 +15,11 @@ export const Container = styled.header`
 `;
 
 export const Content = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
   align-items: center;
   justify-content: space-between;
 
-  width: 40%;
+  width: 100%;
 
   @media (max-width: 768px) {
     width: 95%;
@@ -43,8 +42,8 @@ export const Logo = styled.img.attrs({
   title: 'Homestuck Heardle',
   alt: 'Homestuck Heardle'
 })`
-  width: 100%;
-  margin: 5%;
+  width: 50%;
+  padding: 2%;
   -webkit-touch-callout: none;
   user-select: none;
 `;

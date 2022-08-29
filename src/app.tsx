@@ -8,14 +8,13 @@ import { GuessType } from "./types/guess";
 
 import { todaysSolution } from "./helpers";
 
-import { Header, InfoPopUp, Game, Footer } from "./components";
+import { Header, InfoPopUp, CreditsPopUp, Game, Footer } from "./components";
 
 import * as Styled from "./app.styled";
 
 function App() {
   const initialGuess = {
     song: undefined,
-    skipped: false,
     isCorrect: undefined,
   } as GuessType;
 
@@ -74,8 +73,19 @@ function App() {
   const [isInfoPopUpOpen, setIsInfoPopUpOpen] =
     React.useState<boolean>(firstRun);
 
+  const [isCreditsPopUpOpen, setIsCreditsPopUpOpen] = 
+    React.useState<boolean>(false);
+
   const openInfoPopUp = React.useCallback(() => {
     setIsInfoPopUpOpen(true);
+  }, []);
+
+  const openCreditsPopUp = React.useCallback(() => {
+    setIsCreditsPopUpOpen(true);
+  }, []);
+
+  const closeCreditsPopUp = React.useCallback(() => {
+    setIsCreditsPopUpOpen(false);
   }, []);
 
   const closeInfoPopUp = React.useCallback(() => {
@@ -87,28 +97,26 @@ function App() {
     }
   }, [localStorage.getItem("firstRun")]);
 
-  const skip = React.useCallback(() => {
-    setGuesses((guesses: GuessType[]) => {
-      const newGuesses = [...guesses];
-      newGuesses[currentTry] = {
-        song: undefined,
-        skipped: true,
-        isCorrect: undefined,
-      };
-
-      return newGuesses;
-    });
-
-    setCurrentTry((currentTry) => currentTry + 1);
-
-    event({
-      category: "Game",
-      action: "Skip",
-    });
-  }, [currentTry]);
-
   const guess = React.useCallback(() => {
     const isCorrect = selectedSong === todaysSolution;
+    const isRightAlbum = selectedSong?.albumName === todaysSolution?.albumName;
+    let tagColor = 'red';
+    if (selectedSong?.tags.every((tag) => todaysSolution?.tags.includes(tag))) {
+      tagColor = 'white';
+    } else if (selectedSong?.tags.some((tag) => todaysSolution?.tags.includes(tag))) {
+      tagColor = 'yellow';
+    }
+    const selectedArtists = selectedSong?.artist;
+    let artistColor = 'red';
+    if (selectedArtists?.every((artist) => todaysSolution?.artist.includes(artist))) {
+      console.log('white');
+      artistColor = 'white';
+    } else if (selectedArtists?.some((artist) => todaysSolution?.artist.includes(artist))) {
+      console.log('yellow');
+      artistColor = 'yellow';
+    }
+    
+    
 
     if (!selectedSong) {
       alert("Choose a song");
@@ -119,8 +127,10 @@ function App() {
       const newGuesses = [...guesses];
       newGuesses[currentTry] = {
         song: selectedSong,
-        skipped: false,
         isCorrect: isCorrect,
+        artistColor: artistColor,
+        rightAlbum: isRightAlbum,
+        tagColor: tagColor,
       };
 
       return newGuesses;
@@ -143,8 +153,9 @@ function App() {
 
   return (
     <main>
-      <Header openInfoPopUp={openInfoPopUp} />
-      {isInfoPopUpOpen && <InfoPopUp onClose={closeInfoPopUp} />}
+      <Header openInfoPopUp={openInfoPopUp} openCreditsPopUp={openCreditsPopUp} />
+      {isInfoPopUpOpen && <InfoPopUp onClose={closeInfoPopUp}/>}
+      {isCreditsPopUpOpen && <CreditsPopUp onClose={closeCreditsPopUp} />}
       <Styled.Container>
         <Game
           guesses={guesses}
@@ -152,7 +163,6 @@ function App() {
           todaysSolution={todaysSolution}
           currentTry={currentTry}
           setSelectedSong={setSelectedSong}
-          skip={skip}
           guess={guess}
         />
       </Styled.Container>

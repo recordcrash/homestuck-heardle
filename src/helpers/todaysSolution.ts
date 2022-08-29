@@ -9,5 +9,4 @@ const startDate = new Date(Date.UTC(2022, 4, 2, 0, 0, 0));
 const todaysDate = new Date();
 const index = Math.floor((todaysDate.getTime() - startDate.getTime() )/msInDay)
 
-console.log(startDate);
 export const todaysSolution = songs[index % songs.length];

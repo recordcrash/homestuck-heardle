@@ -17,3 +17,11 @@ export function Button({ onClick, style, variant, children }: Props) {
     </Styled.Button>
   );
 }
+
+export function MaxWidthButton({ onClick, style, variant, children }: Props) {
+  return (
+    <Styled.MaxWidthButton onClick={onClick} variant={variant} style={style}>
+      {children}
+    </Styled.MaxWidthButton>
+  );
+}

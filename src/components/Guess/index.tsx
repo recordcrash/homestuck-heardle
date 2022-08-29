@@ -11,22 +11,35 @@ interface Props {
 }
 
 export function Guess({ guess, isCorrect, active }: Props) {
-  const { song, skipped } = guess;
-  const [text, setText] = React.useState<string>("");
+  const { song, artistColor, rightAlbum, tagColor } = guess;
+  const [track, setTrack] = React.useState<string>("");
+  const [artist, setArtist] = React.useState<string[]>([]);
+  const [album, setAlbum] = React.useState<string>("");
 
   React.useEffect(() => {
     if (song) {
-      setText(`${song.artist} - ${song.name}`);
-    } else if (skipped) {
-      setText("Skipped");
+      setTrack(song.name);
+      setArtist(song.artist);
+      setAlbum(song.albumName);
     } else {
-      setText("");
+      setTrack("");
     }
   }, [guess]);
 
   return (
     <Styled.Container active={active} isCorrect={isCorrect}>
-      <Styled.Text>{text}</Styled.Text>
+      <Styled.Text isCorrect={isCorrect}>{track}</Styled.Text>
+      <Styled.MultiContainer color={artistColor}>
+        {artist.map((artist) => (
+          <Styled.ColumnText key={artist}>{artist}</Styled.ColumnText>
+        ))}
+      </Styled.MultiContainer>
+      <Styled.Text isCorrect={rightAlbum}>{album}</Styled.Text> 
+      <Styled.MultiContainer color={tagColor}>
+        {song?.tags.map((tag) => (
+          <Styled.ColumnText key={tag}>{tag}</Styled.ColumnText>
+        ))}
+      </Styled.MultiContainer>
     </Styled.Container>
   );
 }

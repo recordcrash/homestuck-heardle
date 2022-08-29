@@ -1,6 +1,6 @@
 import React from "react";
 import YouTube from "react-youtube";
-import { IoPlay } from "react-icons/io5";
+import { IoPlay, IoPulse } from "react-icons/io5";
 import { event } from "react-ga";
 
 import { playTimes } from "../../constants";
@@ -30,15 +30,6 @@ export function Player({ id, currentTry }: Props) {
 
   const [isReady, setIsReady] = React.useState<boolean>(false);
 
-  const spoilerProtect = () => {
-    setMetadata();
-    const spoilerProtection = document.getElementById('spoilerProtection') as HTMLAudioElement | null;
-    if (spoilerProtection !== null && spoilerProtection.paused == true) {
-      spoilerProtection.loop = true;
-      spoilerProtection.play();
-    }
-  }
-
   React.useEffect(() => {
     setInterval(() => {
       playerRef.current?.internalPlayer
@@ -49,31 +40,22 @@ export function Player({ id, currentTry }: Props) {
     }, 250);
   }, []);
 
+  const stopPlayback = () => {
+    playerRef.current?.internalPlayer.pauseVideo();
+    playerRef.current?.internalPlayer.seekTo(0);
+    setPlay(false);
+  }
+
   React.useEffect(() => {
     if (play) {
       if (currentTime * 1000 >= currentPlayTime) {
-        playerRef.current?.internalPlayer.pauseVideo();
-        playerRef.current?.internalPlayer.seekTo(0);
-        setPlay(false);
+        stopPlayback();
       }
     }
   }, [play, currentTime]);
 
-  const setMetadata = () => {
-    navigator.mediaSession.metadata = new MediaMetadata({
-      title: 'Spoiler Protection (Remastered)',
-      artist: 'Skaianet Records',
-      album: 'Homestuck Heardle',
-      artwork: [
-        { src: process.env.PUBLIC_URL + 'logo192.png', sizes: '192x192', type: 'image/png' },
-        { src: process.env.PUBLIC_URL + 'logo512.png', sizes: '512x512', type: 'image/png' },
-      ]
-    });
-  }
-
   // don't call play video each time currentTime changes
   const startPlayback = React.useCallback(() => {
-    spoilerProtect();
     playerRef.current?.internalPlayer.playVideo();
     setPlay(true);
     event({
@@ -86,12 +68,14 @@ export function Player({ id, currentTry }: Props) {
     setIsReady(true);
   }, []);
 
+  const showError = React.useCallback((e) => {
+    console.error('YOUTUBE ERROR: ' + e)
+  }, []);
+  
+  console.log(id);
   return (
     <>
-      <audio preload="auto" autoPlay={true} id="spoilerProtection">
-        <source src={process.env.PUBLIC_URL + 'spoilerprotection.mp3'} type="audio/mp3"></source>
-      </audio>
-      <YouTube opts={opts} videoId={id} onReady={setReady} ref={playerRef} />
+      <YouTube opts={opts} videoId={id} onReady={setReady} onError={showError} ref={playerRef} />
       {isReady ? (
         <>
           <Styled.ProgressBackground>
@@ -104,15 +88,21 @@ export function Player({ id, currentTry }: Props) {
             ))}
           </Styled.ProgressBackground>
           <Styled.TimeStamps>
-            <Styled.TimeStamp>1s</Styled.TimeStamp>
+            <Styled.TimeStamp>2s</Styled.TimeStamp>
             <Styled.TimeStamp>16s</Styled.TimeStamp>
           </Styled.TimeStamps>
-          <IoPlay
+          { !play && <IoPlay
             style={{ cursor: "pointer" }}
             size={40}
             color="#fff"
             onClick={startPlayback}
-          />
+          /> }
+          { play && <IoPulse
+            style={{ cursor: "pointer" }}
+            size={40}
+            color="#fff"
+            onClick={stopPlayback}
+          /> }
         </>
       ) : (
         <p>Loading player...</p>
