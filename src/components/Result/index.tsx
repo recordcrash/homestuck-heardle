@@ -33,8 +33,17 @@ export function Result({
   const textForTry = ["Wow!", "Super!", "Congrats!", "Nice!"];
 
   const copyResult = React.useCallback(() => {
-    navigator.clipboard.writeText(scoreToEmoji(guesses));
+    navigator.clipboard.writeText(scoreToEmoji(guesses, false, false));
   }, [guesses]);
+
+  const copyResultNoEmbed = React.useCallback(() => {
+    navigator.clipboard.writeText(scoreToEmoji(guesses, true, false));
+  }, [guesses]);
+
+  const copyResultNoLinks = React.useCallback(() => {
+    navigator.clipboard.writeText(scoreToEmoji(guesses, true, true));
+  }, [guesses]);
+
   if (didGuess) {
 
     return (
@@ -50,6 +59,12 @@ export function Result({
         <YouTube id={todaysSolution.youtubeId} />
         <Button onClick={copyResult} variant="green">
           Copy results
+        </Button>
+        <Button onClick={copyResultNoEmbed} variant="darkgreen">
+          Copy results (no Discord embed)
+        </Button>
+        <Button onClick={copyResultNoLinks} variant="darkgreen">
+          Copy results (no links)
         </Button>
         <Styled.TimeToNext>
           Remember to come back in {hoursToNextDay}{" "} hours!
@@ -67,6 +82,12 @@ export function Result({
         <YouTube id={todaysSolution.youtubeId} />
         <Button onClick={copyResult} variant="green">
           Copy results
+        </Button>
+        <Button onClick={copyResultNoEmbed} variant="darkgreen">
+          Copy results (no Discord embed)
+        </Button>
+        <Button onClick={copyResultNoLinks} variant="darkgreen">
+          Copy results (no links)
         </Button>
         <Styled.TimeToNext>
           Try again in {hoursToNextDay}{" "} hours, or ask your Time player

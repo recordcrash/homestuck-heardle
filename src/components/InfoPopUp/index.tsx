@@ -13,7 +13,7 @@ export function InfoPopUp({ onClose }: Props) {
       <Styled.PopUp>
         <h1>HOW TO PLAY</h1>
         <Styled.Section>
-          <p>Listen to the intro, then find the correct Homestuck song in the list. This game currently takes songs from the first list of albums <a href="sources.txt">here</a>.</p>
+          <p>Listen to the intro, then find the correct Homestuck song in the list. This game currently takes songs from the main albums, with a few exceptions like the piano one.</p>
         </Styled.Section>
         <Styled.Section>
           <p>Incorrect attempts unlock more parts of the song, and tell you if you got the artist, album or theme right:</p>

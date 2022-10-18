@@ -14,6 +14,7 @@ export const Button = styled.button<{ variant?: keyof typeof theme }>`
   font-smooth: never;
   text-rendering: optimizeLegibility;
   font-size: 1rem;
+  margin-bottom: 1rem;
 
   width: max-content;
   padding: 12.5px 20px;

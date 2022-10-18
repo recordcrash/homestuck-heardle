@@ -571,7 +571,7 @@ export const songs = [
       "albumName":"Homestuck Vol. 3",
       "tags":[
          "Jade",
-         "Jade\\'s grandpa"
+         "Jade\'s grandpa"
       ],
       "youtubeId":"az71j7AvBuQ"
    },
@@ -651,7 +651,7 @@ export const songs = [
       "youtubeId":"PI785pDsR88"
    },
    {
-      "name":"Consorts\\' Intermezzo",
+      "name":"Consorts\' Intermezzo",
       "artist":[
          "Alex Rosetti"
       ],
@@ -901,7 +901,7 @@ export const songs = [
    {
       "name":"Cupcake Girl",
       "artist":[
-         "Liam O\\'Donnell"
+         "Liam O\'Donnell"
       ],
       "albumName":"coloUrs and mayhem: Universe B",
       "tags":[
@@ -942,7 +942,7 @@ export const songs = [
       "youtubeId":"a7qyOw3LuLE"
    },
    {
-      "name":"Baroqueback Bowtier (Scratch\\'s Lament)",
+      "name":"Baroqueback Bowtier (Scratch\'s Lament)",
       "artist":[
          "Clark Powell"
       ],
@@ -1321,7 +1321,7 @@ export const songs = [
          "Rose",
          "Jade",
          "Dave",
-         "John\\'s dad",
+         "John\'s dad",
          "Cats",
          "Squiddles",
          "Rabbit",
@@ -1500,7 +1500,7 @@ export const songs = [
       ],
       "albumName":"Homestuck Vol. 1",
       "tags":[
-         "John\\'s dad"
+         "John\'s dad"
       ],
       "youtubeId":"RKURlfskGsE"
    },
@@ -1709,7 +1709,7 @@ export const songs = [
       "youtubeId":"jJ7XGZ04Fgc"
    },
    {
-      "name":"Frogs\\' Intermezzo",
+      "name":"Frogs\' Intermezzo",
       "artist":[
          "Alex Rosetti"
       ],
@@ -1813,7 +1813,7 @@ export const songs = [
       "youtubeId":"O7CI8okTWSg"
    },
    {
-      "name":"Livin\\' It Up",
+      "name":"Livin\' It Up",
       "artist":[
          "Gabe Nezovic"
       ],
@@ -1959,7 +1959,7 @@ export const songs = [
       "youtubeId":"rozLPCPXopw"
    },
    {
-      "name":"Squiddles the Movie Trailer - The Day the Unicorns Couldn\\'t Play",
+      "name":"Squiddles the Movie Trailer - The Day the Unicorns Couldn\'t Play",
       "artist":[
          "Toby Fox"
       ],
@@ -2016,7 +2016,7 @@ export const songs = [
       "youtubeId":"54YThzEi4bk"
    },
    {
-      "name":"Bed of Rose\\'s / Dreams of Derse",
+      "name":"Bed of Rose\'s / Dreams of Derse",
       "artist":[
          "Mark Hadley"
       ],
@@ -2143,7 +2143,7 @@ export const songs = [
       "youtubeId":"2HT5FcjHt1s"
    },
    {
-      "name":"Even in Death (T\\'Morra\\'s Belly Mix)",
+      "name":"Even in Death (T\'Morra\'s Belly Mix)",
       "artist":[
          "Clark Powell",
          "Tavia Morra"
@@ -2315,7 +2315,7 @@ export const songs = [
       "tags":[
          "Eridan",
          "Feferi",
-         "Feferi\\'s lusus",
+         "Feferi\'s lusus",
          "Alternia"
       ],
       "youtubeId":"Sy3Au5UsykI"
@@ -2413,7 +2413,7 @@ export const songs = [
       "youtubeId":"09eVHqwHWYM"
    },
    {
-      "name":"I\\'m a Member of the Midnight Crew (Acapella)",
+      "name":"I\'m a Member of the Midnight Crew (Acapella)",
       "artist":[
          "David Ko"
       ],
@@ -2504,7 +2504,7 @@ export const songs = [
       "youtubeId":"lXmiKt-rBjo"
    },
    {
-      "name":"I Don\\'t Want to Miss a Thing",
+      "name":"I Don\'t Want to Miss a Thing",
       "artist":[
          "Michael Guy Bowman"
       ],
@@ -2643,12 +2643,12 @@ export const songs = [
       "albumName":"Homestuck Vol. 9",
       "tags":[
          "Jake",
-         "Tavros\\' lusus"
+         "Tavros\' lusus"
       ],
       "youtubeId":"60Qjl1iyZ4U"
    },
    {
-      "name":"Unsheath\\'d",
+      "name":"Unsheath\'d",
       "artist":[
          "Alex Rosetti"
       ],
@@ -2860,7 +2860,7 @@ export const songs = [
       "youtubeId":"nkRwwNcIkEw"
    },
    {
-      "name":"Three\\'s a Crowd",
+      "name":"Three\'s a Crowd",
       "artist":[
          "Robert J! Lake",
          "Thomas Ferkol"
@@ -2981,7 +2981,7 @@ export const songs = [
       "youtubeId":"r8sBtl3WYZo"
    },
    {
-      "name":"Spider\\'s Claw",
+      "name":"Spider\'s Claw",
       "artist":[
          "Toby Fox"
       ],
@@ -3011,13 +3011,13 @@ export const songs = [
       "albumName":"Alternia",
       "tags":[
          "Nepeta",
-         "Nepeta\\'s lusus",
+         "Nepeta\'s lusus",
          "Alternia"
       ],
       "youtubeId":"REM1E8wC3Gs"
    },
    {
-      "name":"Terezi\\'s Theme",
+      "name":"Terezi\'s Theme",
       "artist":[
          "Toby Fox"
       ],
@@ -3084,7 +3084,7 @@ export const songs = [
       "albumName":"Homestuck Vol. 3",
       "tags":[
          "Dave",
-         "Dave\\'s bro"
+         "Dave\'s bro"
       ],
       "youtubeId":"CuQpu45cmtw"
    },
@@ -3253,7 +3253,7 @@ export const songs = [
       "youtubeId":"Wq0SjupReyA"
    },
    {
-      "name":"Eridan\\'s Theme",
+      "name":"Eridan\'s Theme",
       "artist":[
          "Toby Fox"
       ],
@@ -3312,7 +3312,7 @@ export const songs = [
       "youtubeId":"MHsZHFb5FqU"
    },
    {
-      "name":"Three in the Morning (RJ\\'s I Can Barely Sleep In This Casino Remix)",
+      "name":"Three in the Morning (RJ\'s I Can Barely Sleep In This Casino Remix)",
       "artist":[
          "Robert J! Lake"
       ],
@@ -3403,7 +3403,7 @@ export const songs = [
       "albumName":"Alternia",
       "tags":[
          "Gamzee",
-         "Gamzee\\'s lusus",
+         "Gamzee\'s lusus",
          "Alternia"
       ],
       "youtubeId":"mrflmgFRrYo"
@@ -3445,7 +3445,7 @@ export const songs = [
       "youtubeId":"CWDbNoGgGyQ"
    },
    {
-      "name":"Joker\\'s Wild",
+      "name":"Joker\'s Wild",
       "artist":[
          "Mark Hadley"
       ],
@@ -3468,7 +3468,7 @@ export const songs = [
       "youtubeId":"xHuyPJpvo4Y"
    },
    {
-      "name":"Pumpkin Party in Sea Hitler\\'s Water Apocalypse",
+      "name":"Pumpkin Party in Sea Hitler\'s Water Apocalypse",
       "artist":[
          "Malcolm Brown"
       ],
@@ -3823,7 +3823,7 @@ export const songs = [
       ],
       "albumName":"Homestuck Vol. 1",
       "tags":[
-         "John\\'s nanna"
+         "John\'s nanna"
       ],
       "youtubeId":"Pf5YpbDgCSU"
    },
@@ -3902,7 +3902,7 @@ export const songs = [
       "youtubeId":"06SVUSwu8Xk"
    },
    {
-      "name":"Love You (Feferi\\'s Theme)",
+      "name":"Love You (Feferi\'s Theme)",
       "artist":[
          "Toby Fox"
       ],
@@ -3913,7 +3913,7 @@ export const songs = [
       "youtubeId":"cmXzwEixV4s"
    },
    {
-      "name":"She\\'s a Sp8der",
+      "name":"She\'s a Sp8der",
       "artist":[
          "Tensei"
       ],
@@ -4437,7 +4437,7 @@ export const songs = [
       "youtubeId":"57FwbcQ4LIA"
    },
    {
-      "name":"I\\'m a Member of the Midnight Crew (Post-Punk Version)",
+      "name":"I\'m a Member of the Midnight Crew (Post-Punk Version)",
       "artist":[
          "Michael Guy Bowman"
       ],
@@ -4475,7 +4475,7 @@ export const songs = [
       "youtubeId":"HpmCCuSHmng"
    },
    {
-      "name":"Nepeta\\'s Theme",
+      "name":"Nepeta\'s Theme",
       "artist":[
          "Toby Fox"
       ],
@@ -4486,7 +4486,7 @@ export const songs = [
          "Equius",
          "Karkat",
          "Gamzee",
-         "Nepeta\\'s lusus",
+         "Nepeta\'s lusus",
          "Alternia"
       ],
       "youtubeId":"Q7ZUxyLyIao"
@@ -4518,7 +4518,7 @@ export const songs = [
       "youtubeId":"pe-4Gsc6TMI"
    },
    {
-      "name":"Speaker (Skaia\\'s Reflection)",
+      "name":"Speaker (Skaia\'s Reflection)",
       "artist":[
          "Alex Rosetti"
       ],
@@ -4541,7 +4541,7 @@ export const songs = [
       "albumName":"Homestuck Vol. 5",
       "tags":[
          "Dave",
-         "Dave\\'s bro",
+         "Dave\'s bro",
          "Lil Cal",
          "Birds",
          "Earth"
@@ -4617,7 +4617,7 @@ export const songs = [
       "youtubeId":"gUHzNBepsJI"
    },
    {
-      "name":"Catchyegrabber (Skipper Plumbthroat\\'s Song)",
+      "name":"Catchyegrabber (Skipper Plumbthroat\'s Song)",
       "artist":[
          "Alex Rosetti"
       ],
@@ -4641,7 +4641,7 @@ export const songs = [
       "youtubeId":"xrKUOCR55sA"
    },
    {
-      "name":"Minihoof\\'s Adventure",
+      "name":"Minihoof\'s Adventure",
       "artist":[
          "Michael Guy Bowman"
       ],
@@ -4889,7 +4889,7 @@ export const songs = [
       "youtubeId":"YsG54QnsMLc"
    },
    {
-      "name":"Vriska\\'s Theme",
+      "name":"Vriska\'s Theme",
       "artist":[
          "Toby Fox"
       ],
@@ -5022,7 +5022,7 @@ export const songs = [
       "youtubeId":"HHlaLTjv4So"
    },
    {
-      "name":"The Temple\\'s Withered Bloom",
+      "name":"The Temple\'s Withered Bloom",
       "artist":[
          "Alex Rosetti"
       ],
@@ -5126,7 +5126,7 @@ export const songs = [
       "albumName":"Homestuck Vol. 3",
       "tags":[
          "Rose",
-         "Rose\\'s mom"
+         "Rose\'s mom"
       ],
       "youtubeId":"YkSq79X6MAw"
    },
@@ -5575,7 +5575,7 @@ export const songs = [
       "youtubeId":"EdCZ1kKzb8A"
    },
    {
-      "name":"Let\\'s All Rock the Heist",
+      "name":"Let\'s All Rock the Heist",
       "artist":[
          "Robert J! Lake"
       ],
@@ -5600,7 +5600,7 @@ export const songs = [
       "youtubeId":"s-4SihyV1yU"
    },
    {
-      "name":"Jade\\'s Lullaby",
+      "name":"Jade\'s Lullaby",
       "artist":[
          "David Ko"
       ],
@@ -5637,7 +5637,7 @@ export const songs = [
       "youtubeId":"PLYF-Zlfd2c"
    },
    {
-      "name":"Knife\\'s Edge",
+      "name":"Knife\'s Edge",
       "artist":[
          "Tensei"
       ],
@@ -5645,7 +5645,7 @@ export const songs = [
       "tags":[
          "Jack Noir",
          "Davesprite",
-         "Dave\\'s bro",
+         "Dave\'s bro",
          "LoWaS"
       ],
       "youtubeId":"eYdneOkIvvc"
@@ -5717,7 +5717,7 @@ export const songs = [
       "albumName":"Homestuck Vol. 3",
       "tags":[
          "Jade",
-         "Jade\\'s grandpa"
+         "Jade\'s grandpa"
       ],
       "youtubeId":"mkPXt83h73w"
    },
@@ -5873,7 +5873,7 @@ export const songs = [
          "John",
          "Rose",
          "Roxy",
-         "John\\'s nanna",
+         "John\'s nanna",
          "Derse"
       ],
       "youtubeId":"bjAK8D5ytiU"
@@ -5890,7 +5890,7 @@ export const songs = [
       "youtubeId":"ncLsScNc4ZY"
    },
    {
-      "name":"Karkat\\'s Theme",
+      "name":"Karkat\'s Theme",
       "artist":[
          "Toby Fox"
       ],
@@ -5974,7 +5974,7 @@ export const songs = [
       "albumName":"Homestuck Vol. 10",
       "tags":[
          "Dave",
-         "Dave\\'s bro",
+         "Dave\'s bro",
          "Earth"
       ],
       "youtubeId":"EJPtdTzq6uY"
@@ -6081,7 +6081,7 @@ export const songs = [
          "Gamzee",
          "Eridan",
          "Feferi",
-         "John\\'s dad",
+         "John\'s dad",
          "Lil Cal",
          "Earth"
       ],
@@ -6099,7 +6099,7 @@ export const songs = [
       "youtubeId":"yeIEkiIjw5c"
    },
    {
-      "name":"Humphrey\\'s Lullaby",
+      "name":"Humphrey\'s Lullaby",
       "artist":[
          "Toby Fox"
       ],
@@ -6178,7 +6178,7 @@ export const songs = [
       "youtubeId":"OesxlnyaBGE"
    },
    {
-      "name":"Maplehoof\\'s Adventure",
+      "name":"Maplehoof\'s Adventure",
       "artist":[
          "Michael Guy Bowman"
       ],
@@ -6258,7 +6258,7 @@ export const songs = [
       "youtubeId":"MrOqTjNrB2Q"
    },
    {
-      "name":"Questant\\'s Lament",
+      "name":"Questant\'s Lament",
       "artist":[
          "Thomas Ferkol"
       ],
@@ -6423,7 +6423,7 @@ export const songs = [
       "albumName":"AlterniaBound",
       "tags":[
          "Tavros",
-         "Tavros\\' lusus",
+         "Tavros\' lusus",
          "Karkat",
          "Vriska"
       ],
@@ -6485,7 +6485,7 @@ export const songs = [
       "albumName":"Alternia",
       "tags":[
          "Gamzee",
-         "Gamzee\\'s lusus",
+         "Gamzee\'s lusus",
          "Alternia"
       ],
       "youtubeId":"ztovKMiiolU"
@@ -6544,7 +6544,7 @@ export const songs = [
       "albumName":"Alternia",
       "tags":[
          "Nepeta",
-         "Nepeta\\'s lusus",
+         "Nepeta\'s lusus",
          "Alternia"
       ],
       "youtubeId":"WPqca-NWV2k"
