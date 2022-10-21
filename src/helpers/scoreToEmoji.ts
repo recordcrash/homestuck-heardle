@@ -7,7 +7,6 @@ export const EMOJIS = {
 };
 
 export function guessToEmoji(guess: GuessType): string {
-  console.log(guess);
   const songEmoji = guess.isCorrect ? EMOJIS.white : EMOJIS.red;
   const artistEmoji =  EMOJIS[guess.artistColor as keyof typeof EMOJIS] ;
   const albumEmoji = guess.rightAlbum ? EMOJIS.white : EMOJIS.red;
@@ -15,7 +14,7 @@ export function guessToEmoji(guess: GuessType): string {
   return `${songEmoji}${artistEmoji}${albumEmoji}${tagsEmoji}`;
 }
 
-export function scoreToEmoji(guesses: GuessType[], noEmbed = false, noLinks = false): string {
+export function scoreToEmoji(guesses: GuessType[], noEmbed: boolean, noLinks: boolean): string {
   const msInDay = 86400000;
   const startDate = new Date(Date.UTC(2022, 4, 2, 0, 0, 0));
   const todaysDate = new Date();

@@ -20,7 +20,7 @@ export const PopUp = styled.div`
   max-width: 500px;
   @media (max-width: 768px) {
     width: 80%;
-    max-height: 90vh;
+    max-height: 70vh;
     overflow-y: scroll;
   }
   padding: 20px;
@@ -50,6 +50,24 @@ export const Spacer = styled.div`
 
 export const Section = styled.div`
   width: 100%;
+  a {
+    color: ${({ theme }) => theme.text};
+  }
+  .red {
+    color: red;
+  }
+  .yellow {
+    color: yellow;
+  }
+`;
+
+export const ShortSection = styled.div`
+  width: 100%;
+  overflow-y: scroll;
+  max-height: 300px;
+  @media (max-width: 768px) {
+    max-height: 100px;
+  }
   a {
     color: ${({ theme }) => theme.text};
   }

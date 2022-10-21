@@ -12,12 +12,13 @@ export function CreditsPopUp({ onClose }: Props) {
     <Styled.Container>
       <Styled.PopUp>
         <h1>CHANGELOG</h1>
-        <Styled.Section>
+        <Styled.ShortSection>
+          <p>2022/10/21 - The skip button is back, and it guesses a random song. Also, added fanmusic weekends, this has been getting a bit too easy... except Genesis Frog, fuck that noiiise.</p>
           <p>2022/10/18 - Share buttons are now sane instead of forcing you to embed when posting on Discord.</p>
           <p>2022/08/29 - Updated dependencies to fix bug. Uphauled code so something may be broken (check the Discord and tell me if it breaks).</p>
           <p>2022/05/07 - Revamped the entire game, it now gives you feedback based on artists, albums and art tags you got right, to bring you in the right direction. Removed skip button.</p>
           <p>2022/05/02 - Release, hard mode (fanmusic and obscure albums) will be released when stats are gathered.</p>
-        </Styled.Section>
+        </Styled.ShortSection>
         <h1>CREDITS</h1>
         <Styled.Section>
           <p>Made by Makin, Niklink, and the <a href="https://discord.gg/homestuck">Homestuck Discord</a>.</p>

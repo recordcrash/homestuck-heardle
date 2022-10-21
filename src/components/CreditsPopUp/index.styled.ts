@@ -48,6 +48,30 @@ export const Spacer = styled.div`
   opacity: 0.5;
 `;
 
+export const ShortSection = styled.div`
+  width: 100%;
+  max-height: 300px;
+  overflow-y: scroll;
+  @media (max-width: 768px) {
+    max-height: 100px;
+  }
+  margin-top: 10px;
+  border: 1px solid ${({ theme }) => theme.text};
+  p {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+  a {
+    color: ${({ theme }) => theme.text};
+  }
+  .red {
+    color: red;
+  }
+  .yellow {
+    color: yellow;
+  }
+`;
+
 export const Section = styled.div`
   width: 100%;
   a {

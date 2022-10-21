@@ -1,0 +1,1 @@
+export const isWeekend = [0, 6, 7].includes(new Date().getDay());

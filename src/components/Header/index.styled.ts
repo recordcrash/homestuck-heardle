@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { isWeekend } from "../../constants/isWeekend";
 
 export const Container = styled.header`
   display: flex;
@@ -38,7 +39,7 @@ export const Content = styled.div`
 `;
 
 export const Logo = styled.img.attrs({
-  src: `${process.env.PUBLIC_URL + 'homestuck-heardle.png'}`,
+  src: `${process.env.PUBLIC_URL + (isWeekend ? 'homestuck-heardle-fanmusic.png' : 'homestuck-heardle.png')}`,
   title: 'Homestuck Heardle',
   alt: 'Homestuck Heardle'
 })`

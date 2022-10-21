@@ -4,11 +4,12 @@ import React from "react";
 import _ from "lodash";
 
 import { Song } from "./types/song";
+import { songs } from "./constants";
 import { GuessType } from "./types/guess";
 
 import { todaysSolution } from "./helpers";
 
-import { Header, InfoPopUp, CreditsPopUp, Game, Footer } from "./components";
+import { Header, InfoPopUp, CreditsPopUp, Game } from "./components";
 
 import * as Styled from "./app.styled";
 
@@ -24,9 +25,15 @@ function App() {
   const [currentTry, setCurrentTry] = React.useState<number>(0);
   const [selectedSong, setSelectedSong] = React.useState<Song>();
   const [didGuess, setDidGuess] = React.useState<boolean>(false);
+  
 
   const firstRun = localStorage.getItem("firstRun") === null;
   let stats = JSON.parse(localStorage.getItem("stats") || "{}");
+
+  React.useEffect(() => {
+    const randomSong = songs[Math.floor(Math.random() * songs.length - 1)]
+    setSelectedSong(randomSong);
+  }, []);
 
   React.useEffect(() => {
     if (Array.isArray(stats)) {
@@ -109,10 +116,8 @@ function App() {
     const selectedArtists = selectedSong?.artist;
     let artistColor = 'red';
     if (selectedArtists?.every((artist) => todaysSolution?.artist.includes(artist))) {
-      console.log('white');
       artistColor = 'white';
     } else if (selectedArtists?.some((artist) => todaysSolution?.artist.includes(artist))) {
-      console.log('yellow');
       artistColor = 'yellow';
     }
     
@@ -137,7 +142,8 @@ function App() {
     });
 
     setCurrentTry((currentTry) => currentTry + 1);
-    setSelectedSong(undefined);
+    const randomSong = songs[Math.floor(Math.random() * songs.length - 1)]
+    setSelectedSong(randomSong);
 
     if (isCorrect) {
       setDidGuess(true);
@@ -163,10 +169,10 @@ function App() {
           todaysSolution={todaysSolution}
           currentTry={currentTry}
           setSelectedSong={setSelectedSong}
+          skip={guess}
           guess={guess}
         />
       </Styled.Container>
-      {/* <Footer /> */}
     </main>
   );
 }

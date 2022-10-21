@@ -72,7 +72,6 @@ export function Player({ id, currentTry }: Props) {
     console.error('YOUTUBE ERROR: ' + e)
   }, []);
   
-  console.log(id);
   return (
     <>
       <YouTube opts={opts} videoId={id} onReady={setReady} onError={showError} ref={playerRef} />

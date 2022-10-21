@@ -56,9 +56,11 @@ export const Text = styled.p<{
   isCorrect: boolean | undefined;
 }>`
   width: 100%;
-  height: max-content;
   text-align: center;
 
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: ${({ theme, isCorrect} , ) => isCorrect ? theme.text : 'red'};
+  max-height: 60px;
+  overflow-y: scroll;
+  max-width: 24%;
 `;

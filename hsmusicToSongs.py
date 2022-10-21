@@ -21,20 +21,27 @@ def get_valid_songs(album_names: List[str], excluded_songs: List[str]) -> List[o
 
     for album_name in album_names:
         potential_songs = load_file(os.path.join(file_path, f"album/{album_name}.yaml"))
+        readable_album_name = potential_songs[0]['Album']
         for song in potential_songs:
             if all(x in song for x in ['Track', 'URLs']):
                 song_name = song['Track']
-                artists =  song['Artists'] if 'Artists' in song else potential_songs[0]['Artists']
+                album_art_artist = potential_songs[0]['Artists'] if 'Artists' in potential_songs[0] else []
+                artists =  song['Artists'] if 'Artists' in song else album_art_artist
+                album_art_tags = potential_songs[0]['Art Tags'] if 'Art Tags' in potential_songs[0] else []
+                tags = song['Art Tags'] if 'Art Tags' in song else album_art_tags
+                # remove any tags that contain the string tw:
+                tags = [tag for tag in tags if not tag.startswith('cw:')]
                 urls = song['URLs']
                 youtube_link = next((url for url in urls if 'youtu' in url), None)
                 if youtube_link is not None and song_name not in excluded_songs:
-                    heardle_artists = ', '.join(artists)
                     heardle_song = {
-                        'artist': heardle_artists,
                         'name': song_name,
+                        'artist': artists,
+                        'albumName': readable_album_name,
+                        'tags': tags,
                         'youtubeId': youtube_link.rsplit('/', 1)[-1],
                     }
-                    if (heardle_artists, song_name) not in [(song['artist'], song['name']) for song in valid_songs]:
+                    if (artists, song_name) not in [(song['artist'], song['name']) for song in valid_songs]:
                         valid_songs.append(heardle_song)
     print(f"{len(valid_songs)} songs added from album list {album_names}")
     random.shuffle(valid_songs)
@@ -50,6 +57,10 @@ if __name__ == '__main__':
     ]
 
     hard_album_names = [
+        'the-baby-is-you', 'homestuck-for-the-holidays', 'lofam', 'lofam2', 'lofam3', 'lofam4', 'lofam5'
+    ]
+
+    impossible_album_names = [
         'the-baby-is-you', 'homestuck-for-the-holidays', 'lofam', 'lofam2', 'lofam3', 'lofam4', 'lofam5', 'weird-puzzle-tunes', 'strife-2', 'xenoplanetarium',
         'gristmas-carols', 'p-s', 'cosmic-caretakers', 'diverging-delicacies', 'moons-of-theseus', 'jailbreak-vol-1', 'tomb-of-the-ancestors', 'sburb', 'beyond-canon',
         'cool-and-new-voulem1', 'sburb-ost', 'hiveswap-act-1-ost', 'hiveswap-act-2-ost' 
