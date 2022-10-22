@@ -19,9 +19,9 @@ export function InfoPopUp({ onClose }: Props) {
           <p>Incorrect attempts unlock more parts of the song, and tell you if you got the artist, album or theme right:</p>
           <ul>
             <li><b>Song:</b> The game ends if you get this right, otherwise it&apos;ll show up <span className="red">red</span>.</li>
-            <li><b>Artist:</b> <span className="green">Green</span> if you got them all right. If one or more of the contributors are correct, it&apos;ll be <span className="yellow">yellow</span>, <span className="red">red</span> if none did.</li>
-            <li><b>Album:</b> <span className="green">Green</span> if you got it right, <span className="red">red</span> if you didn&apos;t.</li>
-            <li><b>Theme:</b> If one of more of the art tags (characters or locations that appear in the art) of your guess are in the final song, it&apos;ll be <span className="yellow">yellow</span>, <span className="green">green</span> if they&apos;re all in the true song, <span className="red">red</span> if none are.</li>
+            <li><b>Artist:</b> White if you got them all right. If one or more of the contributors are correct, it&apos;ll be <span className="yellow">yellow</span>, <span className="red">red</span> if none did.</li>
+            <li><b>Album:</b> White if you got it right, <span className="red">red</span> if you didn&apos;t.</li>
+            <li><b>Theme:</b> If one of more of the art tags (characters or locations that appear in the art) of your guess are in the final song, it&apos;ll be <span className="yellow">yellow</span>, white if they&apos;re all in the true song, <span className="red">red</span> if none apply.</li>
           </ul>
           <p>If you&apos;re stuck, the skip button (or an empty guess) will submit a random song from the soundtrack.</p>
         </Styled.Section>

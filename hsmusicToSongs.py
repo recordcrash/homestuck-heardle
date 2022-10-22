@@ -20,10 +20,14 @@ def get_valid_songs(album_names: List[str], excluded_songs: List[str]) -> List[o
     valid_songs = []
 
     for album_name in album_names:
+        print(f'Loading {album_name}...')
         potential_songs = load_file(os.path.join(file_path, f"album/{album_name}.yaml"))
+        print(f'Loaded {len(potential_songs)} songs from {album_name}')
         readable_album_name = potential_songs[0]['Album']
+        print(f'Album name: {readable_album_name}')
         for song in potential_songs:
             if all(x in song for x in ['Track', 'URLs']):
+                print(f'Found song {song["Track"]} from {readable_album_name}')
                 song_name = song['Track']
                 album_art_artist = potential_songs[0]['Artists'] if 'Artists' in potential_songs[0] else []
                 artists =  song['Artists'] if 'Artists' in song else album_art_artist
@@ -43,6 +47,8 @@ def get_valid_songs(album_names: List[str], excluded_songs: List[str]) -> List[o
                     }
                     if (artists, song_name) not in [(song['artist'], song['name']) for song in valid_songs]:
                         valid_songs.append(heardle_song)
+                    else:
+                        print(f'Skipping {song_name} because it is a duplicate')
     print(f"{len(valid_songs)} songs added from album list {album_names}")
     random.shuffle(valid_songs)
     return valid_songs
