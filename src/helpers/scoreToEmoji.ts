@@ -1,15 +1,17 @@
 import { GuessType } from "../types/guess";
+import { isWeekend } from "./isWeekend";
 
 export const EMOJIS = {
   red: "⬜",
   yellow: "🟨",
-  white: "🟩",
+  green: "🟩",
+  blue: "🟦",
 };
 
 export function guessToEmoji(guess: GuessType): string {
-  const songEmoji = guess.isCorrect ? EMOJIS.white : EMOJIS.red;
+  const songEmoji = guess.isCorrect ? (isWeekend ? EMOJIS.blue : EMOJIS.green) : EMOJIS.red;
   const artistEmoji =  EMOJIS[guess.artistColor as keyof typeof EMOJIS] ;
-  const albumEmoji = guess.rightAlbum ? EMOJIS.white : EMOJIS.red;
+  const albumEmoji = guess.rightAlbum ? (isWeekend ? EMOJIS.blue : EMOJIS.green) : EMOJIS.red;
   const tagsEmoji =  EMOJIS[guess.tagColor as keyof typeof EMOJIS];
   return `${songEmoji}${artistEmoji}${albumEmoji}${tagsEmoji}`;
 }
@@ -30,7 +32,7 @@ export function scoreToEmoji(guesses: GuessType[], noEmbed: boolean, noLinks: bo
     if (guess.song) scoreEmojis +=  '\n' + guessToEmoji(guess);
   });
 
-  const prefix = `Homestuck Heardle #${index} ${score}/6`;
+  const prefix = isWeekend ? `Homestuck Fanmusic Heardle #${index} ${score}/6` : `Homestuck Heardle #${index} ${score}/6`;
 
   return `${prefix}${scoreEmojis}${suffix}`;
 }

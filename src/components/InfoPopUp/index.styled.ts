@@ -59,6 +59,9 @@ export const Section = styled.div`
   .yellow {
     color: yellow;
   }
+  .green {
+    color: green;
+  }
 `;
 
 export const ShortSection = styled.div`
@@ -76,6 +79,9 @@ export const ShortSection = styled.div`
   }
   .yellow {
     color: yellow;
+  }
+  .green {
+    color: green;
   }
 `;
 

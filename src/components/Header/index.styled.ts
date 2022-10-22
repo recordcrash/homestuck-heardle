@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { isWeekend } from "../../constants/isWeekend";
+import { isWeekend } from "../../helpers";
 
 export const Container = styled.header`
   display: flex;
