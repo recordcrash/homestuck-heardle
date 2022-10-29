@@ -7,7 +7,7 @@ import { Song } from "./types/song";
 import { songs } from "./constants";
 import { GuessType } from "./types/guess";
 
-import { isWeekend, todaysSolution } from "./helpers";
+import { todaysSolution } from "./helpers";
 
 import { Header, InfoPopUp, CreditsPopUp, Game } from "./components";
 
@@ -109,16 +109,14 @@ function App() {
     const isRightAlbum = selectedSong?.albumName === todaysSolution?.albumName;
     let tagColor = 'red';
     if (selectedSong?.tags.every((tag) => todaysSolution?.tags.includes(tag))) {
-      if (isWeekend) tagColor = 'blue';
-      else tagColor = 'green';
+      tagColor = 'white';
     } else if (selectedSong?.tags.some((tag) => todaysSolution?.tags.includes(tag))) {
       tagColor = 'yellow';
     }
     const selectedArtists = selectedSong?.artist;
     let artistColor = 'red';
     if (selectedArtists?.every((artist) => todaysSolution?.artist.includes(artist))) {
-      if (isWeekend) artistColor = 'blue';
-      else artistColor = 'green';
+      artistColor = 'white';
     } else if (selectedArtists?.some((artist) => todaysSolution?.artist.includes(artist))) {
       artistColor = 'yellow';
     }
