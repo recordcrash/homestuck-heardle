@@ -28,4 +28,4 @@ jobs:
         cache: 'npm'
     - run: npm install -g npm
     - run: npm ci
-    - run: react-scripts build
+    - run: npm run build
