@@ -26,5 +26,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm ci
-    - run: react-scripts build
+    - name: Upgrade NPM
+      run: npm install -g npm
+    - name: Install dependencies
+      run: npm ci
+    - name: Build project
