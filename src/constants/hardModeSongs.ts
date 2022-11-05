@@ -81,7 +81,7 @@ export const hardModeSongs = [
     "tags": [
       "Joey"
     ],
-    "youtubeId": "watch?v=ejwHOMimBz8"
+    "youtubeId": "ejwHOMimBz8"
   },
   {
     "albumName": "Homestuck for the Holidays",
@@ -221,7 +221,7 @@ export const hardModeSongs = [
     "tags": [
       "LoFaM"
     ],
-    "youtubeId": "watch?v=LzVlLI5h_p8"
+    "youtubeId": "LzVlLI5h_p8"
   },
   {
     "albumName": "Land of Fans and Music 4",
@@ -243,7 +243,7 @@ export const hardModeSongs = [
     "tags": [
       "LoWaS"
     ],
-    "youtubeId": "watch?v=SVLv3dQP6Bo"
+    "youtubeId": "SVLv3dQP6Bo"
   },
   {
     "albumName": "Land of Fans and Music 3",
@@ -268,7 +268,7 @@ export const hardModeSongs = [
       "Caliborn",
       "Earth"
     ],
-    "youtubeId": "watch?v=8rELmI9IpQY"
+    "youtubeId": "8rELmI9IpQY"
   },
   {
     "albumName": "Land of Fans and Music",
@@ -491,7 +491,7 @@ export const hardModeSongs = [
     "tags": [
       "Aradia"
     ],
-    "youtubeId": "watch?v=C1BsYfejnEI"
+    "youtubeId": "C1BsYfejnEI"
   },
   {
     "albumName": "Land of Fans and Music",
@@ -540,7 +540,7 @@ export const hardModeSongs = [
     "tags": [
       "The Theseus"
     ],
-    "youtubeId": "watch?v=TV0NEBDv03k"
+    "youtubeId": "TV0NEBDv03k"
   },
   {
     "albumName": "Land of Fans and Music 2",
@@ -594,7 +594,7 @@ export const hardModeSongs = [
       "Dave",
       "Dirk"
     ],
-    "youtubeId": "watch?v=jsduPSUVQdQ"
+    "youtubeId": "jsduPSUVQdQ"
   },
   {
     "albumName": "Land of Fans and Music 4",
@@ -642,7 +642,7 @@ export const hardModeSongs = [
     "tags": [
       "LoLaR"
     ],
-    "youtubeId": "watch?v=1UWlt1H1FrI"
+    "youtubeId": "1UWlt1H1FrI"
   },
   {
     "albumName": "Land of Fans and Music 4",
@@ -714,7 +714,7 @@ export const hardModeSongs = [
       "Prospit",
       "Felt Manor"
     ],
-    "youtubeId": "watch?v=coySV5sYMR0"
+    "youtubeId": "coySV5sYMR0"
   },
   {
     "albumName": "Land of Fans and Music 5",
@@ -728,7 +728,7 @@ export const hardModeSongs = [
       "Frog Temple",
       "Earth"
     ],
-    "youtubeId": "watch?v=ZeAOEkQMrHU"
+    "youtubeId": "ZeAOEkQMrHU"
   },
   {
     "albumName": "Land of Fans and Music 5",
@@ -740,7 +740,7 @@ export const hardModeSongs = [
       "PM",
       "Green Sun"
     ],
-    "youtubeId": "watch?v=3pZ_hspYvz4"
+    "youtubeId": "3pZ_hspYvz4"
   },
   {
     "albumName": "Land of Fans and Music 4",
@@ -778,7 +778,7 @@ export const hardModeSongs = [
       "Jadesprite",
       "Earth"
     ],
-    "youtubeId": "watch?v=fIwO9UJUHTw"
+    "youtubeId": "fIwO9UJUHTw"
   },
   {
     "albumName": "Land of Fans and Music 4",
@@ -804,7 +804,7 @@ export const hardModeSongs = [
       "Jude",
       "Earth"
     ],
-    "youtubeId": "watch?v=dNOjjP4TY7Y"
+    "youtubeId": "dNOjjP4TY7Y"
   },
   {
     "albumName": "Land of Fans and Music 2",
@@ -883,7 +883,7 @@ export const hardModeSongs = [
     "tags": [
       "The Psiioniic"
     ],
-    "youtubeId": "watch?v=NNaOG8lEcdc"
+    "youtubeId": "NNaOG8lEcdc"
   },
   {
     "albumName": "Land of Fans and Music 2",
@@ -921,7 +921,7 @@ export const hardModeSongs = [
       "MSPA Reader",
       "Green Sun"
     ],
-    "youtubeId": "watch?v=rfYjvCMK4bM"
+    "youtubeId": "rfYjvCMK4bM"
   },
   {
     "albumName": "Land of Fans and Music 3",
@@ -945,7 +945,7 @@ export const hardModeSongs = [
       "PM",
       "Ruined Earth"
     ],
-    "youtubeId": "watch?v=hjZKrh02m2Y"
+    "youtubeId": "hjZKrh02m2Y"
   },
   {
     "albumName": "Homestuck for the Holidays",
@@ -1028,7 +1028,7 @@ export const hardModeSongs = [
       "MSPA Reader",
       "Squiddles"
     ],
-    "youtubeId": "watch?v=hDuIDLoKMqs"
+    "youtubeId": "hDuIDLoKMqs"
   },
   {
     "albumName": "Land of Fans and Music 5",
@@ -1039,7 +1039,7 @@ export const hardModeSongs = [
     "tags": [
       "Rose"
     ],
-    "youtubeId": "watch?v=pSJbelWuUDI"
+    "youtubeId": "pSJbelWuUDI"
   },
   {
     "albumName": "Land of Fans and Music 5",
@@ -1052,7 +1052,7 @@ export const hardModeSongs = [
       "Xefros",
       "Earth"
     ],
-    "youtubeId": "watch?v=C8xeXGVokHM"
+    "youtubeId": "C8xeXGVokHM"
   },
   {
     "albumName": "Land of Fans and Music 5",
@@ -1065,7 +1065,7 @@ export const hardModeSongs = [
       "John's dad",
       "Skaia"
     ],
-    "youtubeId": "watch?v=_mQkYy6nttM"
+    "youtubeId": "_mQkYy6nttM"
   },
   {
     "albumName": "Land of Fans and Music 5",
@@ -1079,7 +1079,7 @@ export const hardModeSongs = [
       "Green Sun",
       "LoTaK"
     ],
-    "youtubeId": "watch?v=ke8_hZ5edXw"
+    "youtubeId": "ke8_hZ5edXw"
   },
   {
     "albumName": "Land of Fans and Music 2",
@@ -1102,7 +1102,7 @@ export const hardModeSongs = [
       "Jack Noir",
       "Lord English"
     ],
-    "youtubeId": "watch?v=gqw3lZ6AUlY"
+    "youtubeId": "gqw3lZ6AUlY"
   },
   {
     "albumName": "Land of Fans and Music 3",
@@ -1131,7 +1131,7 @@ export const hardModeSongs = [
       "LoFaF",
       "Consorts"
     ],
-    "youtubeId": "watch?v=timMEhYQxjY"
+    "youtubeId": "timMEhYQxjY"
   },
   {
     "albumName": "Land of Fans and Music 4",
@@ -1230,7 +1230,7 @@ export const hardModeSongs = [
     "tags": [
       "Karkat"
     ],
-    "youtubeId": "watch?v=j6kns5jv8L8"
+    "youtubeId": "j6kns5jv8L8"
   },
   {
     "albumName": "Land of Fans and Music 2",
@@ -1262,7 +1262,7 @@ export const hardModeSongs = [
       "LoWaS",
       "LoFaF"
     ],
-    "youtubeId": "watch?v=ar8Z_6atoE0"
+    "youtubeId": "ar8Z_6atoE0"
   },
   {
     "albumName": "Land of Fans and Music 4",
@@ -1293,7 +1293,7 @@ export const hardModeSongs = [
       "Skaia",
       "Horrorterrors"
     ],
-    "youtubeId": "watch?v=tQpAKoeAbEg"
+    "youtubeId": "tQpAKoeAbEg"
   },
   {
     "albumName": "Land of Fans and Music",
@@ -1317,7 +1317,7 @@ export const hardModeSongs = [
       "Genesis Frog",
       "Lotus"
     ],
-    "youtubeId": "watch?v=8-NN_LZJeko"
+    "youtubeId": "8-NN_LZJeko"
   },
   {
     "albumName": "Land of Fans and Music 5",
@@ -1329,7 +1329,7 @@ export const hardModeSongs = [
       "Lord English",
       "Calliope"
     ],
-    "youtubeId": "watch?v=DT2dH80Ee_Q"
+    "youtubeId": "DT2dH80Ee_Q"
   },
   {
     "albumName": "Land of Fans and Music 4",
@@ -1366,7 +1366,7 @@ export const hardModeSongs = [
       "Horrorterrors",
       "Derse"
     ],
-    "youtubeId": "watch?v=vFi9v2d94SU"
+    "youtubeId": "vFi9v2d94SU"
   },
   {
     "albumName": "The Baby is You",
@@ -1442,7 +1442,7 @@ export const hardModeSongs = [
       "John",
       "Earth"
     ],
-    "youtubeId": "watch?v=3Qw2tXmDBhA"
+    "youtubeId": "3Qw2tXmDBhA"
   },
   {
     "albumName": "Land of Fans and Music",
@@ -1510,7 +1510,7 @@ export const hardModeSongs = [
       "Rose",
       "Skaia"
     ],
-    "youtubeId": "watch?v=wl2AvGz-c2I"
+    "youtubeId": "wl2AvGz-c2I"
   },
   {
     "albumName": "Land of Fans and Music 5",
@@ -1521,7 +1521,7 @@ export const hardModeSongs = [
     "tags": [
       "Damara"
     ],
-    "youtubeId": "watch?v=xGFE9vOUsaM"
+    "youtubeId": "xGFE9vOUsaM"
   },
   {
     "albumName": "Land of Fans and Music 2",
@@ -1610,7 +1610,7 @@ export const hardModeSongs = [
       "Jade",
       "Green Sun"
     ],
-    "youtubeId": "watch?v=k1mfCm6WCVc"
+    "youtubeId": "k1mfCm6WCVc"
   },
   {
     "albumName": "Land of Fans and Music",
@@ -1688,7 +1688,7 @@ export const hardModeSongs = [
       "Nepeta",
       "Equius"
     ],
-    "youtubeId": "watch?v=LVBJT3ljeoU"
+    "youtubeId": "LVBJT3ljeoU"
   },
   {
     "albumName": "Homestuck for the Holidays",
@@ -1729,7 +1729,7 @@ export const hardModeSongs = [
     "tags": [
       "LoFaM"
     ],
-    "youtubeId": "watch?v=D93xs_BP8F0"
+    "youtubeId": "D93xs_BP8F0"
   },
   {
     "albumName": "Land of Fans and Music",
@@ -1775,7 +1775,7 @@ export const hardModeSongs = [
       "Joey",
       "Earth"
     ],
-    "youtubeId": "watch?v=-SSOQZAt9wE"
+    "youtubeId": "-SSOQZAt9wE"
   },
   {
     "albumName": "Land of Fans and Music 4",
@@ -1875,7 +1875,7 @@ export const hardModeSongs = [
       "Imperial Drones",
       "Earth"
     ],
-    "youtubeId": "watch?v=2gM77uBarZo"
+    "youtubeId": "2gM77uBarZo"
   },
   {
     "albumName": "Land of Fans and Music 5",
@@ -1888,7 +1888,7 @@ export const hardModeSongs = [
       "Jack Noir",
       "Green Sun"
     ],
-    "youtubeId": "watch?v=Qm_red7oXxg"
+    "youtubeId": "Qm_red7oXxg"
   },
   {
     "albumName": "Land of Fans and Music 4",
@@ -1916,7 +1916,7 @@ export const hardModeSongs = [
       "Prospit",
       "Skaia"
     ],
-    "youtubeId": "watch?v=GKV750wSox0"
+    "youtubeId": "GKV750wSox0"
   },
   {
     "albumName": "Land of Fans and Music 5",
@@ -1930,7 +1930,7 @@ export const hardModeSongs = [
       "LoTaK",
       "SBaHJ"
     ],
-    "youtubeId": "watch?v=juCVUBIxzHI"
+    "youtubeId": "juCVUBIxzHI"
   },
   {
     "albumName": "Land of Fans and Music 4",
@@ -2006,7 +2006,7 @@ export const hardModeSongs = [
     "tags": [
       "Derse"
     ],
-    "youtubeId": "watch?v=dkSA2M-YnoI"
+    "youtubeId": "dkSA2M-YnoI"
   },
   {
     "albumName": "Land of Fans and Music",
@@ -2080,7 +2080,7 @@ export const hardModeSongs = [
     "tags": [
       "John"
     ],
-    "youtubeId": "watch?v=aSuUmmolnfc"
+    "youtubeId": "aSuUmmolnfc"
   },
   {
     "albumName": "Land of Fans and Music 4",
@@ -2168,7 +2168,7 @@ export const hardModeSongs = [
     "tags": [
       "Dave's bro"
     ],
-    "youtubeId": "watch?v=AB7Y0CkGZs8"
+    "youtubeId": "AB7Y0CkGZs8"
   },
   {
     "albumName": "Land of Fans and Music",
@@ -2365,7 +2365,7 @@ export const hardModeSongs = [
       "Imperial Drones",
       "Alternia"
     ],
-    "youtubeId": "watch?v=f7n2Khq4LAA"
+    "youtubeId": "f7n2Khq4LAA"
   },
   {
     "albumName": "Land of Fans and Music",
@@ -2411,7 +2411,7 @@ export const hardModeSongs = [
     "tags": [
       "The Theseus"
     ],
-    "youtubeId": "watch?v=cYkgtztQ1VI"
+    "youtubeId": "cYkgtztQ1VI"
   },
   {
     "albumName": "Land of Fans and Music 5",
@@ -2423,7 +2423,7 @@ export const hardModeSongs = [
       "Doc Scratch",
       "Felt Manor"
     ],
-    "youtubeId": "watch?v=iXToxT3NsCs"
+    "youtubeId": "iXToxT3NsCs"
   },
   {
     "albumName": "Land of Fans and Music 5",
@@ -2434,7 +2434,7 @@ export const hardModeSongs = [
     "tags": [
       "BK"
     ],
-    "youtubeId": "watch?v=TpaFPn8pEzc"
+    "youtubeId": "TpaFPn8pEzc"
   },
   {
     "albumName": "Land of Fans and Music 4",
@@ -2612,7 +2612,7 @@ export const hardModeSongs = [
       "Prospit",
       "Skaia"
     ],
-    "youtubeId": "watch?v=MhCPzgmq9f4"
+    "youtubeId": "MhCPzgmq9f4"
   },
   {
     "albumName": "Land of Fans and Music 4",
@@ -2660,7 +2660,7 @@ export const hardModeSongs = [
       "Roxy",
       "Dream Bubbles"
     ],
-    "youtubeId": "watch?v=t0l3dugTt_0"
+    "youtubeId": "t0l3dugTt_0"
   },
   {
     "albumName": "Land of Fans and Music 2",
@@ -2739,7 +2739,7 @@ export const hardModeSongs = [
     "tags": [
       "Lord English"
     ],
-    "youtubeId": "watch?v=XdH7O_xjCWU"
+    "youtubeId": "XdH7O_xjCWU"
   },
   {
     "albumName": "Land of Fans and Music 3",
@@ -2960,7 +2960,7 @@ export const hardModeSongs = [
     "tags": [
       "The Condesce"
     ],
-    "youtubeId": "watch?v=OxqRv_qtEbI"
+    "youtubeId": "OxqRv_qtEbI"
   },
   {
     "albumName": "Land of Fans and Music 4",
@@ -3075,7 +3075,7 @@ export const hardModeSongs = [
     "tags": [
       "Earth"
     ],
-    "youtubeId": "watch?v=1yl-7sOPoiU"
+    "youtubeId": "1yl-7sOPoiU"
   },
   {
     "albumName": "Land of Fans and Music",
@@ -3143,7 +3143,7 @@ export const hardModeSongs = [
     "tags": [
       "John"
     ],
-    "youtubeId": "watch?v=NVv0CPbArG8"
+    "youtubeId": "NVv0CPbArG8"
   },
   {
     "albumName": "Land of Fans and Music",
@@ -3168,7 +3168,7 @@ export const hardModeSongs = [
     "tags": [
       "Sollux"
     ],
-    "youtubeId": "watch?v=j-tGgV4IQjI"
+    "youtubeId": "j-tGgV4IQjI"
   },
   {
     "albumName": "Land of Fans and Music 4",
@@ -3194,7 +3194,7 @@ export const hardModeSongs = [
       "Alternate Calliope",
       "Green Sun"
     ],
-    "youtubeId": "watch?v=jRzCCnQMy0A"
+    "youtubeId": "jRzCCnQMy0A"
   },
   {
     "albumName": "Land of Fans and Music 3",
@@ -3253,7 +3253,7 @@ export const hardModeSongs = [
       "Doc Scratch",
       "Kanaya"
     ],
-    "youtubeId": "watch?v=oRAxcEUV2CY"
+    "youtubeId": "oRAxcEUV2CY"
   },
   {
     "albumName": "Land of Fans and Music 4",
@@ -3363,7 +3363,7 @@ export const hardModeSongs = [
       "Davesprite",
       "Earth"
     ],
-    "youtubeId": "watch?v=hGloMT4eTVc"
+    "youtubeId": "hGloMT4eTVc"
   },
   {
     "albumName": "Land of Fans and Music 2",
@@ -3506,7 +3506,7 @@ export const hardModeSongs = [
       "Caliborn",
       "Calliope"
     ],
-    "youtubeId": "watch?v=cmD50Nc54j8"
+    "youtubeId": "cmD50Nc54j8"
   },
   {
     "albumName": "Land of Fans and Music 5",
@@ -3519,7 +3519,7 @@ export const hardModeSongs = [
       "Rose",
       "The Theseus"
     ],
-    "youtubeId": "watch?v=7Ur5B1q_ALI"
+    "youtubeId": "7Ur5B1q_ALI"
   },
   {
     "albumName": "Land of Fans and Music 2",
@@ -3589,7 +3589,7 @@ export const hardModeSongs = [
       "Karkat",
       "Terezi"
     ],
-    "youtubeId": "watch?v=ZemSjnaNP7E"
+    "youtubeId": "ZemSjnaNP7E"
   },
   {
     "albumName": "Land of Fans and Music 3",
@@ -3749,7 +3749,7 @@ export const hardModeSongs = [
     "tags": [
       "LoFaM"
     ],
-    "youtubeId": "watch?v=34fs7ne4xIs"
+    "youtubeId": "34fs7ne4xIs"
   },
   {
     "albumName": "Land of Fans and Music 4",
@@ -3774,7 +3774,7 @@ export const hardModeSongs = [
     "tags": [
       "Rose"
     ],
-    "youtubeId": "watch?v=Ius7ZXFrfw8"
+    "youtubeId": "Ius7ZXFrfw8"
   },
   {
     "albumName": "Land of Fans and Music 4",
@@ -3809,7 +3809,7 @@ export const hardModeSongs = [
       "Dave",
       "Derse"
     ],
-    "youtubeId": "watch?v=Y-7ltO31Jmk"
+    "youtubeId": "Y-7ltO31Jmk"
   },
   {
     "albumName": "Land of Fans and Music 4",
@@ -3845,7 +3845,7 @@ export const hardModeSongs = [
     "tags": [
       "Jack Noir"
     ],
-    "youtubeId": "watch?v=KvCTWeq-gS0"
+    "youtubeId": "KvCTWeq-gS0"
   },
   {
     "albumName": "Land of Fans and Music 4",
@@ -3867,7 +3867,7 @@ export const hardModeSongs = [
     "tags": [
       "Green Sun"
     ],
-    "youtubeId": "watch?v=X3yZsftMe4o"
+    "youtubeId": "X3yZsftMe4o"
   },
   {
     "albumName": "Land of Fans and Music 4",
@@ -3919,7 +3919,7 @@ export const hardModeSongs = [
     "tags": [
       "Caliborn"
     ],
-    "youtubeId": "watch?v=oIDaGuA9wrU"
+    "youtubeId": "oIDaGuA9wrU"
   },
   {
     "albumName": "Land of Fans and Music 3",
@@ -3958,7 +3958,7 @@ export const hardModeSongs = [
       "John",
       "LoWaS"
     ],
-    "youtubeId": "watch?v=pwgTe6OiQ6w"
+    "youtubeId": "pwgTe6OiQ6w"
   },
   {
     "albumName": "Land of Fans and Music 4",
@@ -3994,7 +3994,7 @@ export const hardModeSongs = [
       "The Condesce",
       "The Handmaid"
     ],
-    "youtubeId": "watch?v=P_Znys9mqnI"
+    "youtubeId": "P_Znys9mqnI"
   },
   {
     "albumName": "Land of Fans and Music",
@@ -4255,7 +4255,7 @@ export const hardModeSongs = [
       "Eridan's lusus",
       "Alternia"
     ],
-    "youtubeId": "watch?v=BpJ_Sz45gr4"
+    "youtubeId": "BpJ_Sz45gr4"
   },
   {
     "albumName": "Land of Fans and Music",
@@ -4365,7 +4365,7 @@ export const hardModeSongs = [
       "Snowman",
       "Jack Noir"
     ],
-    "youtubeId": "watch?v=OQ1eE_m1jtU"
+    "youtubeId": "OQ1eE_m1jtU"
   },
   {
     "albumName": "Land of Fans and Music 5",
@@ -4377,7 +4377,7 @@ export const hardModeSongs = [
       "Jade",
       "LoFaF"
     ],
-    "youtubeId": "watch?v=oIH6rZMqBI0"
+    "youtubeId": "oIH6rZMqBI0"
   },
   {
     "albumName": "Homestuck for the Holidays",
@@ -4480,7 +4480,7 @@ export const hardModeSongs = [
       "WV",
       "Ruined Earth"
     ],
-    "youtubeId": "watch?v=mbq4si7qGnE"
+    "youtubeId": "mbq4si7qGnE"
   },
   {
     "albumName": "Land of Fans and Music 2",
@@ -4525,7 +4525,7 @@ export const hardModeSongs = [
       "Green Sun",
       "Horrorterrors"
     ],
-    "youtubeId": "watch?v=X5CnrosloJI"
+    "youtubeId": "X5CnrosloJI"
   },
   {
     "albumName": "Land of Fans and Music 2",
@@ -4573,7 +4573,7 @@ export const hardModeSongs = [
       "Dirk",
       "Dave"
     ],
-    "youtubeId": "watch?v=UQFQwZCFb-E"
+    "youtubeId": "UQFQwZCFb-E"
   },
   {
     "albumName": "Land of Fans and Music 3",
@@ -4662,7 +4662,7 @@ export const hardModeSongs = [
       "Horses",
       "SBaHJ"
     ],
-    "youtubeId": "watch?v=115zhNX61vY"
+    "youtubeId": "115zhNX61vY"
   },
   {
     "albumName": "Homestuck for the Holidays",
@@ -4747,7 +4747,7 @@ export const hardModeSongs = [
     "tags": [
       "Joey"
     ],
-    "youtubeId": "watch?v=g7uFahy6jCU"
+    "youtubeId": "g7uFahy6jCU"
   },
   {
     "albumName": "Land of Fans and Music 3",
@@ -4797,7 +4797,7 @@ export const hardModeSongs = [
       "John",
       "Cats"
     ],
-    "youtubeId": "watch?v=Hi3uTwAT2-8"
+    "youtubeId": "Hi3uTwAT2-8"
   },
   {
     "albumName": "Land of Fans and Music 4",
@@ -4825,7 +4825,7 @@ export const hardModeSongs = [
       "HB",
       "Felt Manor"
     ],
-    "youtubeId": "watch?v=Ty9aULG-1Ak"
+    "youtubeId": "Ty9aULG-1Ak"
   },
   {
     "albumName": "Land of Fans and Music 2",
@@ -5092,7 +5092,7 @@ export const hardModeSongs = [
     "tags": [
       "BK"
     ],
-    "youtubeId": "watch?v=Wc1noeRG2HA"
+    "youtubeId": "Wc1noeRG2HA"
   },
   {
     "albumName": "Land of Fans and Music 4",
@@ -5137,6 +5137,6 @@ export const hardModeSongs = [
     "tags": [
       "Dave"
     ],
-    "youtubeId": "watch?v=I8njHUPcoRg"
+    "youtubeId": "I8njHUPcoRg"
   }
 ]
