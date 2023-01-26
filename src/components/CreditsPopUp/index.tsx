@@ -13,6 +13,7 @@ export function CreditsPopUp({ onClose }: Props) {
       <Styled.PopUp>
         <h1>CHANGELOG</h1>
         <Styled.ShortSection>
+          <p>2023/01/26 - Added wiki link to victory page. Right now a huge hack that will break with long or ambiguous names, but LupoCani would not shut up.</p>
           <p>2022/10/21 - The skip button is back, and it guesses a random song. Also, added fanmusic weekends, this has been getting a bit too easy... except Genesis Frog, fuck that noiiise.</p>
           <p>2022/10/18 - Share buttons are now sane instead of forcing you to embed when posting on Discord.</p>
           <p>2022/08/29 - Updated dependencies to fix bug. Uphauled code so something may be broken (check the Discord and tell me if it breaks).</p>

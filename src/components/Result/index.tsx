@@ -30,6 +30,54 @@ export function Result({
       60
   );
 
+  
+  // Incredible hack just to avoid regenerating the song list for this lupoCani requested feature
+  // TODO: when I do have to regenerate the song list, do this right by just... passing the directory...
+  const baseTrackLink = "https://hsmusic.wiki/track/"
+  // using the wiki's title javascript regex parsing (thanks Niklink)
+  // this WILL break if there is a funny trackname-2 like with Light, so good luck
+  /*  track_name = re.split(' ', track_name)
+      track_name = "-".join(track_name)
+      track_name = re.sub('&', 'and', track_name)
+      track_name = re.sub('[^a-zA-Z0-9\-]', '', track_name)
+      track_name = re.sub('-{2,}', '-', track_name)
+      track_name = re.sub('^-+|-+$', '', track_name).lower() */
+  let normalizedTrackName;
+  // UGGGHGHHHGHGH
+  if (todaysSolution.name === "Three in the Morning (RJ's I Can Barely Sleep In This Casino Remix)") {
+    normalizedTrackName = "three-in-the-morning-rj"
+  } else if (todaysSolution.name === "Light") {
+    if (todaysSolution.artist[0] === "Erik Scheele") {
+      normalizedTrackName = "light-vol5"
+    } else if (todaysSolution.artist[0] === "Clark Powell") {
+      normalizedTrackName = "light-medium"
+    }
+  } else if (todaysSolution.name === "~~SIDE 1~~") {
+    if (todaysSolution.albumName === "coloUrs and mayhem: Universe B") {
+      normalizedTrackName = "side-1-universe-b"
+    } else if (todaysSolution.albumName === "coloUrs and mayhem: Universe A") {
+      normalizedTrackName = "side-1-universe-a"
+    }
+  } else if (todaysSolution.name === "~~SIDE 2~~") {
+    if (todaysSolution.albumName === "coloUrs and mayhem: Universe B") {
+      normalizedTrackName = "side-2-universe-b"
+    } else if (todaysSolution.albumName === "coloUrs and mayhem: Universe A") {
+      normalizedTrackName = "side-2-universe-a"
+    }
+  } else if (todaysSolution.name === "~~ADDITIONAL MAYHEM~~") {
+    if (todaysSolution.albumName === "coloUrs and mayhem: Universe B") {
+      normalizedTrackName = "additional-mayhem-universe-b"
+    }
+    else if (todaysSolution.albumName === "coloUrs and mayhem: Universe A") {
+      normalizedTrackName = "additional-mayhem-universe-a"
+    }
+    // I got tired, I'll just... ignore the other 30 possibilities
+  } else {
+    normalizedTrackName = todaysSolution.name.split(' ').join('-').replace('&', 'and').replace(/[^a-zA-Z0-9\-]/g, '').replace(/-{2,}/g, '-').replace(/^-+|-+$/g, '').toLowerCase();
+  }
+
+  const trackWikiLink = baseTrackLink + normalizedTrackName;
+
   const textForTry = ["Wow!", "Super!", "Congrats!", "Nice!"];
 
   const copyResult = React.useCallback(() => {
@@ -50,9 +98,12 @@ export function Result({
       <>
         <Styled.ResultTitle>{textForTry[currentTry - 1]}</Styled.ResultTitle>
         <Styled.SongTitle>
-          Today&apos;s song is {todaysSolution.artist} -{" "}
+          Today&apos;s song is: {todaysSolution.artist} -{" "}
           {todaysSolution.name}
         </Styled.SongTitle>
+        <Styled.WikiLink> 
+          <a href={trackWikiLink}>See it in the HS Music Wiki</a>
+        </Styled.WikiLink>
         <Styled.Tries>
           You guessed it in {currentTry} {currentTry === 1 ? 'try' : 'tries'}
         </Styled.Tries>
