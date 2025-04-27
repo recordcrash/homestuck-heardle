@@ -1,5 +1,7 @@
 # Homestuck Heardle
 
+[![Deploy Heardle](https://github.com/recordcrash/homestuck-heardle/actions/workflows/main.yml/badge.svg)](https://github.com/recordcrash/homestuck-heardle/actions/workflows/main.yml)
+
 ![alt text](image.png)
 
 A Homestuck song guessing game hosted at https://heardle.homestuck.net. Every day, there's a new song and you get a few attempts to guess it with increasingly more playtime. Then, you can share your stats in the Homestuck Discord.
