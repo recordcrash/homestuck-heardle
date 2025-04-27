@@ -1,13 +1,17 @@
-# Heardle Template
+# Homestuck Heardle
 
-Forked from [Shizerq](https://github.com/Shizerq/sluchajfun) 
-Clone of famous [Heardle](https://heardle.app) - "that daily music game". <br />
-Uses through the YouTube iFrame API.
+![alt text](image.png)
 
-4/28/22 - issues with video availability
+A Homestuck song guessing game hosted at https://heardle.homestuck.net. Every day, there's a new song and you get a few attempts to guess it with increasingly more playtime. Then, you can share your stats in the Homestuck Discord.
+
+There's a script to convert [hsmusic-wiki](https://github.com/hsmusic/hsmusic-data/) data into usable data for the app, you'll need to run this every time new albums come out if you want those songs to propagate.
+
+Forked from [sarvarghese](https://github.com/sarvarghese/)'s clone of [Shizerq](https://github.com/Shizerq/sluchajfun)'s
+clone of famous [Heardle](https://heardle.app) - "that daily music game".
+
+Uses the YouTube iFrame API.
 
 # Building (default React stuff)
-
 In the project directory, you can run:
 
 ### `yarn`
